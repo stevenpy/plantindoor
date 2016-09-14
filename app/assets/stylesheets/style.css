@@ -114,13 +114,13 @@ fieldset {
 }
 
 .section-title h2 span {
-    color: #00BCD4;
+    color: #8dba63;
 }
 
 a.read-more {
     display: inline-block;
     background: #fff;
-    color: #00BCD4;
+    color: #8dba63;
     padding: 6px 16px;
     box-shadow: 0px 1px 4.7px 0.3px rgba(0, 0, 0, 0.24);
     text-transform: uppercase;
@@ -142,7 +142,7 @@ a.read-more:hover {
     font-size: 30px;
     color: #fff;
     text-align: center;
-    background-color: #00BCD4;
+    background-color: #8dba63;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -293,7 +293,7 @@ a.read-more:hover {
     width: 100%;
     position: absolute;
     content: "";
-    background: #00BCD4;
+    background: #8dba63;
 }
 
 .navbar {
@@ -314,7 +314,7 @@ a.read-more:hover {
 }
 
 .menu-bg .logo a {
-    color: #00BCD4;
+    color: #8dba63;
 }
 
 .menu-bg .mainmenu .navbar-nav li a {
@@ -891,7 +891,7 @@ a.pricing-btn {
 
 .single-contact i {
     font-size: 20px;
-    color: #00BCD4;
+    color: #8dba63;
 }
 
 .contact-details ul {
@@ -941,7 +941,7 @@ a.pricing-btn {
 .footer-social-link ul li a {
     display: block;
     padding: 10px;
-    background: #00BCD4;
+    background: #8dba63;
     height: 40px;
     width: 40px;
     color: #fff;
