@@ -209,7 +209,7 @@ a.read-more:hover {
 }
 .welcome-image-area:after {
     position: absolute;
-    background: rgba(0, 188, 212, 0.67);
+    background: rgba(118, 186, 56, 0.67);
     left: 0;
     top: 0;
     width: 100%;
