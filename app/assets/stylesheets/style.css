@@ -202,7 +202,7 @@ a.read-more:hover {
 .welcome-image-area {
     position: relative;
     height: 100%;
-    background: url(bg/bg.jpg);
+    background: url(bg/backg.png);
     background-size: cover;
     z-index: 1;
     text-align: center;
@@ -248,7 +248,6 @@ a.read-more:hover {
 }
 
 .logo {
-    padding-top: 28px;
     -webkit-transition: 1s;
     transition: 1s;
 }
@@ -308,7 +307,6 @@ a.read-more:hover {
 }
 
 .menu-bg .logo {
-    padding-top: 18px;
     -webkit-transition: 1s;
     transition: 1s;
 }
@@ -611,7 +609,7 @@ ul.work li:hover {
 
 ul.work li.active {
     border: none;
-    color: #00BCDB;
+    color: #8dba63;
     background-color: #fff;
     box-shadow: 0px 1px 4.7px 0.3px rgba(0, 0, 0, 0.24);
 }

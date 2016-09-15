@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+$navbar-height: 0px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+.navbar-toggle {
+  margin-top: -65px;
+}
+
