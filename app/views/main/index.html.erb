@@ -1,179 +1,324 @@
-    <!-- START HOMEPAGE DESIGN AREA -->
-    <header id="home" class="welcome-area">
-        <div class="header-top-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <!-- START LOGO DESIGN AREA -->
-                        <div class="logo">                                                      
-            				<%= image_tag "team/logo-b.png", class: "", alt: "" %>
-                        </div>
-                        <!-- END LOGO DESIGN AREA -->
-                    </div>
-                    <div class="col-md-9">
-                        <!-- START MENU DESIGN AREA -->
-                        <div class="mainmenu">
-                            <div class="navbar navbar-nobg">
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="navbar-collapse collapse">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li class="active"><a class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a></li>
-                                        <li><a class="smoth-scroll" href="#about">About</a></li>
-                                        <li><a class="smoth-scroll" href="#service">features</a></li>
-                                        <li><a class="smoth-scroll" href="#team">team</a></li>
-                                        <li><a class="smoth-scroll" href="#work">plants</a></li>
-                                        <li><a class="smoth-scroll" href="#blog">forum</a></li>
-                                        <li><a class="smoth-scroll" href="#contact">contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END MENU DESIGN AREA -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="welcome-image-area">
-            <div class="display-table">
-                <div class="display-table-cell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2>Grow with PlantIndoor</h2>
-                                <p>Growing your own cannabis has never been easier</p>
-                                <a class="slide-btn smoth-scroll" href="#about">learn more</a>
-                                <a class="slide-btn smoth-scroll" href="#contact">discount !</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- / END HOMEPAGE DESIGN AREA -->
+<!-- START HOMEPAGE DESIGN AREA -->
+  <header id="home" class="welcome-area">
+    <div class="header-top-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <!-- START LOGO DESIGN AREA -->
+            <div class="logo">
+            	<%= link_to(root_path) do %>
+                <%= image_tag "team/logo-b.png", class: "", alt: "" %>
+                <% end %>
 
-    <!-- START ABOUT US DESIGN AREA -->
-    <section id="about" class="about-us-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <!-- START SECTION TITLE DESIGN AREA -->
-                    <div class="section-title text-center">
-                        <h2>About <span>plantindoor</span></h2>
-                    </div>
-                    <!-- / END SECTION TITLE DESIGN AREA -->
-                </div>
             </div>
-            <div class="row">
-                <!-- START ABOUT IMAGE DESIGN AREA -->
-                <div class="col-sm-12">
-                	<div class="embed-responsive embed-responsive-16by9">
+            <!-- END LOGO DESIGN AREA -->
+          </div>
+          <div class="col-md-9">
+            <!-- START MENU DESIGN AREA -->
+            <div class="mainmenu">
+              <div class="navbar navbar-nobg">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a></li>
+                    <li><a class="smoth-scroll" href="#about">About</a></li>
+                    <li><a class="smoth-scroll" href="#service">features</a></li>
+                    <li><a class="smoth-scroll" href="#team">team</a></li>
+                    <li><a class="smoth-scroll" href="#work">plants</a></li>
+                    <li><a class="smoth-scroll" href="#blog">forum</a></li>
+                    <li><a class="smoth-scroll" href="#contact">contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          <!-- END MENU DESIGN AREA -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item slides active">
+        <div class="slide-1"></div>
+          <div class="hero">
+            <hgroup>
+              <h1>Grow with plantindoor</h1>
+              <h3>Growing has never been easier</h3>
+            </hgroup>
+            <a class="slide-btn smoth-scroll" href="#about">learn more</a>
+            <a class="slide-btn smoth-scroll" href="#contact">discount !</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- / END HOMEPAGE DESIGN AREA -->
+
+  <!-- START ABOUT US DESIGN AREA -->
+  <section id="about" class="about-us-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- START SECTION TITLE DESIGN AREA -->
+          <div class="section-title text-center">
+            <h2>About <span>plantindoor</span></h2>
+          </div>
+        <!-- / END SECTION TITLE DESIGN AREA -->
+        </div>
+      </div>
+      <div class="row">
+        <!-- START ABOUT IMAGE DESIGN AREA -->
+        <div class="col-sm-12">
+          <div class="embed-responsive embed-responsive-16by9">
     					<iframe class="embed-responsive-item" src="//www.youtube.com/embed/ljUyn5_jtds"></iframe>
 					</div>
-                    <!-- <div class="about-image">
-                        <%= image_tag "about.jpg", class: "img-responsive", alt: "" %>
-                    </div> -->
-                </div>
-                <!-- / END ABOUT US IMAGE AREA -->
-                <!-- START ABOUT US TEXT DESIGN AREA -->
-                <!-- <div class="col-md-6">
-                    <div class="about-text">
-                        <h4>about our company</h4>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentiallyIt has survived not only five centuriesLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially</p>
-                        <a href="" class="read-more">Read more</a>
-                    </div>
-                </div> -->               
-                <!-- / END ABOUT US TEXT DESIGN AREA -->
-            </div>
+      <!--<div class="about-image">
+            <%= image_tag "about.jpg", class: "img-responsive", alt: "" %>
+          </div> -->
         </div>
-    </section>
+        <!-- / END ABOUT US IMAGE AREA -->
+        <!-- START ABOUT US TEXT DESIGN AREA -->
+  <!--  <div class="col-md-6">
+          <div class="about-text">
+            <h4>about our company</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentiallyIt has survived not only five centuriesLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially</p>
+            <a href="" class="read-more">Read more</a>
+          </div>
+        </div> -->
+        <!-- / END ABOUT US TEXT DESIGN AREA -->
+      </div>
+    </div>
+  </section>
     <!-- / END ABOUT US DESIGN AREA -->
 
     <!-- START SERVICES DESIGN AREA -->
     <section id="service" class="service-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title text-center">
-                        <h2><span>plantindoor</span> features</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-title text-center">
+              <h2><span>plantindoor</span> features</h2>
             </div>
-            <div class="row">
-                <!-- START SINGLE SERVICES DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service" id="gif1">
-                        <i class="fa fa-tint"></i>
-                        <h4>Automatic watering</h4>
-                        <p>Gives your plants the proper</p>
-                        <p>water and nutrients. Never</p>
-                        <p>forget to water again.</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- START SINGLE SERVICES DESIGN AREA -->
+          <div class="col-md-4 col-sm-6">
+              <div class="single-service" id="gif1">
+                  <i class="fa fa-tint"></i>
+                  <h4>Automatic watering</h4>
+                  <p>Gives your plants the proper</p>
+                  <p>water and nutrients. Never</p>
+                  <p>forget to water again.</p>
+                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#ordine">learn more</a>
+                  <!-- Modal -->
+                  <div id="ordine" class="modal fade" role="dialog">
+                    <div class="vertical-alignment-helper">
+                      <div class="modal-dialog vertical-align-center">
+                        <div class="modal-dialog">
+
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                              <h4 class="modal-title">Ordine inviato!</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>I  !</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- / END SINGLE SERVICES DESIGN AREA -->
-                <!-- START SINGLE SERVICES DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service">
-                        <i class="fa fa-fire"></i>
-                        <h4>Temperature control</h4>
-                        <p>Ensures that your plants </p> 
-                        <p>are always thriving in the</p>
-                        <p>right temperature.</p>
+              </div>
+              <!-- / END SINGLE SERVICES DESIGN AREA -->
+              <!-- START SINGLE SERVICES DESIGN AREA -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service">
+                  <i class="fa fa-fire"></i>
+                  <h4>Temperature control</h4>
+                  <p>Ensures that your plants </p>
+                  <p>are always thriving in the</p>
+                  <p>right temperature.</p>
+                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#ordine">learn more</a>
+                  <!-- Modal -->
+                  <div id="ordine" class="modal fade" role="dialog">
+                    <div class="vertical-alignment-helper">
+                      <div class="modal-dialog vertical-align-center">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                              <h4 class="modal-title">Ordine inviato!</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>I vostri </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- / END SINGLE SERVICES DESIGN AREA -->
-                <!-- START SINGLE SERVICES DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service">
-                        <i class="fa fa-cloud"></i>
-                        <h4>humidity control</h4>
-                        <p>Schedules the ideal</p>
-                        <p>humidity for your plants.</p>
-                        <p>humidity for your plants.</p>
+              </div>
+              <!-- / END SINGLE SERVICES DESIGN AREA -->
+              <!-- START SINGLE SERVICES DESIGN AREA -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service">
+                  <i class="fa fa-cloud"></i>
+                  <h4>humidity control</h4>
+                  <p>Schedules the ideal</p>
+                  <p>humidity for your plants.</p>
+                  <p>humidity for your plants.</p>
+                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#ordine">learn more</a>
+                  <!-- Modal -->
+                  <div id="ordine" class="modal fade" role="dialog">
+                    <div class="vertical-alignment-helper">
+                      <div class="modal-dialog vertical-align-center">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                              <h4 class="modal-title">Ordine inviato!</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>I vostri ordini </p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- / END SINGLE SERVICES DESIGN AREA -->
-                <!-- START SINGLE SERVICES DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service">
-                        <i class="fa fa-lightbulb-o"></i>
-                        <h4>Photons light</h4>
-                        <p>Specialized LEDs give your</p>
-                        <p>plants the perfect color and </p>
-                        <p>covering an 8-colour spectrum.</p>
+              </div>
+              <!-- / END SINGLE SERVICES DESIGN AREA -->
+              <!-- START SINGLE SERVICES DESIGN AREA -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service">
+                  <i class="fa fa-lightbulb-o"></i>
+                  <h4>Photons light</h4>
+                  <p>Specialized LEDs give your</p>
+                  <p>plants the perfect color and </p>
+                  <p>covering an 8-colour spectrum.</p>
+                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#ordine">learn more</a>
+                  <!-- Modal -->
+                  <div id="ordine" class="modal fade" role="dialog">
+                    <div class="vertical-alignment-helper">
+                      <div class="modal-dialog vertical-align-center">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                              <h4 class="modal-title">Ordine inviato!</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>I vostri ordini saranno evasi in ordine cronologico di arrivo. </p>
+                              <p>Grazie per aver scelto Mailmodel !</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- / END SINGLE SERVICES DESIGN AREA -->
-                <!-- START SINGLE SERVICES DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service">
-                        <i class="fa fa-leaf"></i>
-                        <h4>carbon filter</h4>
-                        <p>Whatever smell your organic</p> 
-                        <p>matter might produce</p> 
-                        <p>is filtered away.</p>
+              </div>
+              <!-- / END SINGLE SERVICES DESIGN AREA -->
+              <!-- START SINGLE SERVICES DESIGN AREA -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service">
+                  <i class="fa fa-leaf"></i>
+                  <h4>carbon filter</h4>
+                  <p>Whatever smell your organic</p>
+                  <p>matter might produce</p>
+                  <p>is filtered away.</p>
+                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#ordine">learn more</a>
+                  <!-- Modal -->
+                  <div id="ordine" class="modal fade" role="dialog">
+                    <div class="vertical-alignment-helper">
+                      <div class="modal-dialog vertical-align-center">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                              <h4 class="modal-title">Ordine inviato!</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>I vostri ordini saranno evasi in ordine cronologico di arrivo. Riceverete, una volta che abbiamo controllato </p>
+                              <p>Grazie per aver scelto Mailmodel !</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- / END SINGLE SERVICES DESIGN AREA -->
-                <!-- START SINGLE SERVICES DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service">
-                        <i class="fa fa-expand"></i>
-                        <h4>100% Modular</h4>
-                        <p>Do not worry about the size</p>
-                        <p>of your plants, your box is</p>
-                        <p>scalable.</p>
+              </div>
+              <!-- / END SINGLE SERVICES DESIGN AREA -->
+              <!-- START SINGLE SERVICES DESIGN AREA -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service">
+                  <i class="fa fa-expand"></i>
+                  <h4>100% Modular</h4>
+                  <p>Do not worry about the size</p>
+                  <p>of your plants, your box is</p>
+                  <p>scalable.</p>
+                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#ordine">learn more</a>
+                  <!-- Modal -->
+                  <div id="ordine" class="modal fade" role="dialog">
+                    <div class="vertical-alignment-helper">
+                      <div class="modal-dialog vertical-align-center">
+                        <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                              <h4 class="modal-title">Ordine inviato!</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p>I vostri ordini saranno evasi in ordine cronologico di arrivo. Riceverete, una volta che abbiamo controllato la disponibilità fisica in magazzino, una mail di conferma e, successivamente.</p>
+                              <p>Grazie per aver scelto Mailmodel !</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <!-- / END SINGLE SERVICES DESIGN AREA -->
+              </div>
+              <!-- / END SINGLE SERVICES DESIGN AREA -->
             </div>
         </div>
     </section>
@@ -181,184 +326,178 @@
 
     <!-- START TEAM DESIGN AREA -->
     <section id="team" class="team-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title text-center">
-                        <h2>meet team <span>plantindoor</span></h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-title text-center">
+              <h2>meet team <span>plantindoor</span></h2>
             </div>
-            <div class="row">
-                <!-- START SINGLE TEAM DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-team">
-                    	<%= image_tag "team/plantindoor.jpg", alt: "", class: "img-circle" %>
-                        <h4>steven philbert</h4>
-                        <h6 class="text-muted">Developer/Co-Founder</h6>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
-                        <ul class="team-social">
-                            <li><a href="www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
-                            <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- / END SINGLE TEAM DESIGN AREA -->
-                <!-- START SINGLE TEAM DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-team">
-                    <%= image_tag "team/plantindoor.jpg", alt: "", class: "img-circle" %>
-                        <h4>michel kiem</h4>
-                        <h6 class="text-muted">CEO/Co-Founder</h6>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
-                        <ul class="team-social">
-                            <li><a href="www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
-                            <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- / END SINGLE TEAM DESIGN AREA -->
-                <!-- START SINGLE TEAM DESIGN AREA -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-team">
-                        <%= image_tag "team/plantindoor.jpg", alt: "", class: "img-circle" %>
-                        <h4>alberto pereira</h4>
-                        <h6 class="text-muted"> mechanical eng/Co-Founder</h6>
-                        <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
-                        <ul class="team-social">
-                            <li><a href="www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
-                            <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
-                            <!-- <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
-                        </ul>
-                    </div>
-                </div>
-                <!-- / END SINGLE TEAM DESIGN AREA -->
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <!-- START SINGLE TEAM DESIGN AREA -->
+          <div class="col-md-4 col-sm-6">
+            <div class="single-team">
+              <%= image_tag "team/plantindoor.jpg", alt: "", class: "img-circle" %>
+              <h4>steven philbert</h4>
+              <h6 class="text-muted">Developer/Co-Founder</h6>
+        <!--  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+              <ul class="team-social">
+                <li><a href="www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
+          <!--  <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- / END SINGLE TEAM DESIGN AREA -->
+          <!-- START SINGLE TEAM DESIGN AREA -->
+          <div class="col-md-4 col-sm-6">
+            <div class="single-team">
+              <%= image_tag "team/plantindoor.jpg", alt: "", class: "img-circle" %>
+              <h4>michel kiem</h4>
+              <h6 class="text-muted">CEO/Co-Founder</h6>
+          <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+              <ul class="team-social">
+                <li><a href="www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
+          <!--  <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- / END SINGLE TEAM DESIGN AREA -->
+          <!-- START SINGLE TEAM DESIGN AREA -->
+          <div class="col-md-4 col-sm-6">
+            <div class="single-team">
+              <%= image_tag "team/plantindoor.jpg", alt: "", class: "img-circle" %>
+              <h4>alberto pereira</h4>
+              <h6 class="text-muted"> mechanical eng/Co-Founder</h6>
+        <!--  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> -->
+              <ul class="team-social">
+                <li><a href="www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
+                <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
+                <!-- <li><a href=""><i class="fa fa-dribbble"></i></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- / END SINGLE TEAM DESIGN AREA -->
+        </div>
+      </div>
     </section>
     <!-- / END TEAM DESIGN AREA -->
 
     <!-- START WORK DESIGN AREA -->
     <section id="work" class="work section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title text-center">
-                        <h2>What plants can you grow with <span>plantindoor</span> ?</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-title text-center">
+              <h2>What plants can you grow with <span>plantindoor</span> ?</h2>
             </div>
-            <div class="row">
-                <ul class="work">
-                    <li class="filter" data-filter="all">all</li>                   
-                    <li class="filter" data-filter=".development">Vegetables</li>
-                    <li class="filter" data-filter=".photography">Fruits</li>
-                    <li class="filter" data-filter=".webdesign">Medicine</li>
-                </ul>
-            </div>
-            <div class="work-inner">
-                <div class="row work-posts">
-                    
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-4 col-sm-4 mix development">
-                        <div class="item">                           
-                            <%= image_tag "portfolio/tomato.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>tomato</h4>
-                            </div> 
-                        </div>
-                    </div>
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <!-- <div class="col-md-4 col-sm-4 mix web">
-                        <div class="item">
-                            
-                            <%= image_tag "portfolio/3.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>view</h4>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-4 col-sm-4 mix development">
-                        <div class="item">
-
-                            <%= image_tag "portfolio/pepper.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>pepper</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <!-- <div class="col-md-4 col-sm-4 mix typography web">
-                        <div class="item">
-
-                            <%= image_tag "portfolio/5.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>view</h4>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-4 col-sm-4 mix development">
-                        <div class="item">
-
-                            <%= image_tag "portfolio/bean.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>bean</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-4 col-sm-4 mix development">
-                        <div class="item">
-
-                            <%= image_tag "portfolio/salad.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>salad</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-4 col-sm-4 mix photography">
-                        <div class="item">
-                            <%= image_tag "portfolio/raspberry.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>raspberry</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-4 col-sm-4 mix webdesign">
-                        <div class="item">
-                            <%= image_tag "portfolio/amnesia-haze.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>amnesia haze</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                    <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-4 col-sm-4 mix webdesign">
-                        <div class="item">
-                            <%= image_tag "portfolio/white-widow.jpg", alt: "" %>
-                            <div class="portfolio-caption">
-                                    <h4>White widow</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END SINGLE WORK DESIGN AREA -->
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <ul class="work">
+            <li class="filter" data-filter="all">all</li>
+            <li class="filter" data-filter=".development">Vegetables</li>
+            <li class="filter" data-filter=".photography">Fruits</li>
+            <li class="filter" data-filter=".webdesign">Medicine</li>
+          </ul>
+        </div>
+        <div class="work-inner">
+          <div class="row work-posts">
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-4 mix development">
+              <div class="item">
+                <%= image_tag "portfolio/tomato.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>tomato</h4>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+      <!--  <div class="col-md-4 col-sm-4 mix web">
+              <div class="item">
+                <%= image_tag "portfolio/3.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>view</h4>
+                </div>
+              </div>
+            </div> -->
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-4 mix development">
+              <div class="item">
+                <%= image_tag "portfolio/pepper.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>pepper</h4>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+      <!--  <div class="col-md-4 col-sm-4 mix typography web">
+              <div class="item">
+                <%= image_tag "portfolio/5.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>view</h4>
+                </div>
+              </div>
+            </div> -->
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-4 mix development">
+              <div class="item">
+                <%= image_tag "portfolio/bean.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>bean</h4>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-4 mix development">
+              <div class="item">
+                <%= image_tag "portfolio/salad.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>salad</h4>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-4 mix photography">
+              <div class="item">
+                <%= image_tag "portfolio/raspberry.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>raspberry</h4>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-4 mix webdesign">
+              <div class="item">
+                <%= image_tag "portfolio/amnesia-haze.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>amnesia haze</h4>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-4 mix webdesign">
+              <div class="item">
+                <%= image_tag "portfolio/white-widow.jpg", alt: "" %>
+                <div class="portfolio-caption">
+                  <h4>White widow</h4>
+                </div>
+              </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+          </div>
+        </div>
+      </div>
     </section>
     <!-- START WORK DESIGN AREA -->
 
@@ -374,7 +513,7 @@
                 </div>
             </div>
             <div class="row">
-                
+
                 <!-- START SINGLE BLOG DESIGN AREA -->
                 <div class="col-md-offset-4 col-md-4">
                     <div class="single-blog">
@@ -393,70 +532,68 @@
 
     <!-- START CONTACT DESIGN AREA -->
     <section id="contact" class="contact-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="section-title text-center">
-                        <h2>contact <span>us</span></h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="section-title text-center">
+              <h2>contact <span>us</span></h2>
             </div>
-            <div class="row">
-                <!-- START CONTACT DETAILS DESIGN AREA -->
-                <div class="col-md-offset-3 col-md-6">
-                    <div class="contact-details">
-                        <div class="single-contact">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <h6 class="text-muted">242, King Ave, San Francisco</h6>
-                        </div>
-                        <!-- <div class="single-contact">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <h6 class="text-muted">+000-111-2222-333 </h6>
-                        </div> -->
-                        <div class="single-contact">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <h6 class="text-muted">contact@plantindoor.com </h6>
-                        </div>
-                        <div class="single-contact">
-                            <i class="fa fa-globe" aria-hidden="true"></i>
-                            <h6 class="text-muted">www.plantindoor.com</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- / END CONTACT DETAILS DESIGN AREA -->
+          </div>
+        </div>
+        <div class="row">
+        <!-- START CONTACT DETAILS DESIGN AREA -->
+        <div class="col-md-offset-3 col-md-6">
+          <div class="contact-details">
+            <div class="single-contact">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <h6 class="text-muted">242, King Ave, San Francisco</h6>
             </div>
-        </div>
-    </section>
-    <!-- / END CONTACT DESIGN AREA -->
-
-    <!-- START FOOTER DESIGN AREA -->
-    <footer class="footer-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-text text-center">
-                        <h1>Plantindoor</h1>
-                        <div class="footer-social-link">
-                            <ul>
-                                <li><a href="https://www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
-                                <!-- <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
-                                <li><a href="https://www.instagram.com/plantindoor"><i class="fa fa-instagram"></i></a></li>
-                                <!-- <li><a href=""><i class="fa fa-snapchat"></i></a></li> -->
-                            </ul>
-                        </div>
-                        <h6 class="text-muted">&copy;copyright 2016 plantindoor allright reserved</h6>
-                    </div>
-                </div>
+      <!--  <div class="single-contact">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <h6 class="text-muted">+000-111-2222-333 </h6>
+            </div> -->
+            <div class="single-contact">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <h6 class="text-muted">contact@plantindoor.com </h6>
             </div>
+            <div class="single-contact">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <h6 class="text-muted">www.plantindoor.com</h6>
+            </div>
+          </div>
         </div>
-    </footer>
-    <!-- / END CONTACT DETAILS DESIGN AREA -->
-    <!-- START SCROOL UP DESIGN AREA -->
-    <div class="scroll-to-up">
-        <div class="scrollup">
-            <i class="fa fa-angle-up"></i>
-        </div>
+        <!-- / END CONTACT DETAILS DESIGN AREA -->
+      </div>
     </div>
-    <!-- / END SCROOL UP DESIGN AREA -->
+  </section>
+  <!-- / END CONTACT DESIGN AREA -->
 
-    
+  <!-- START FOOTER DESIGN AREA -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center">
+            <h1>Plantindoor</h1>
+            <div class="footer-social-link">
+              <ul>
+                <li><a href="https://www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>
+          <!--  <li><a href=""><i class="fa fa-twitter"></i></a></li> -->
+                <li><a href="https://www.instagram.com/plantindoor"><i class="fa fa-instagram"></i></a></li>
+          <!--  <li><a href=""><i class="fa fa-snapchat"></i></a></li> -->
+              </ul>
+            </div>
+            <h6 class="text-muted">&copy;copyright 2016 plantindoor allright reserved</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / END CONTACT DETAILS DESIGN AREA -->
+  <!-- START SCROOL UP DESIGN AREA -->
+  <div class="scroll-to-up">
+    <div class="scrollup">
+      <i class="fa fa-angle-up"></i>
+    </div>
+  </div>
+    <!-- / END SCROOL UP DESIGN AREA -->
