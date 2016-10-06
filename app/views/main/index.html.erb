@@ -1,9 +1,16 @@
+
 <!-- START HOMEPAGE DESIGN AREA -->
   <header id="home" class="welcome-area">
     <div class="header-top-area">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
+            <% if notice %>
+              <%= notice %>
+            <% end %>
+            <% if alert %>
+              <%= alert %>
+            <% end %>
             <!-- START LOGO DESIGN AREA -->
             <div class="logo">
             	<%= link_to(root_path) do %>
@@ -119,7 +126,7 @@
                   <p>Gives your plants the proper</p>
                   <p>water and nutrients. Never</p>
                   <p>forget to water again.</p>
-                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#watering">learn more</a>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#watering">learn more</a>
                   <!-- Modal -->
                   <div id="watering" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -154,7 +161,7 @@
                   <p>Ensures that your plants </p>
                   <p>are always thriving in the</p>
                   <p>right temperature.</p>
-                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#temperature">learn more</a>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#temperature">learn more</a>
                   <!-- Modal -->
                   <div id="temperature" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -188,7 +195,7 @@
                   <p>Choose the best recipe</p>
                   <p>for your plants and watch</p>
                   <p>them grow.</p>
-                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#humidity">learn more</a>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#humidity">learn more</a>
                   <!-- Modal -->
                   <div id="humidity" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -222,7 +229,7 @@
                   <p>Specialized LEDs give your</p>
                   <p>plants the perfect color and </p>
                   <p>covering an 8-colour spectrum.</p>
-                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#light">learn more</a>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#light">learn more</a>
                   <!-- Modal -->
                   <div id="light" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -257,7 +264,7 @@
                   <p>Whatever smell your organic</p>
                   <p>matter might produce</p>
                   <p>is filtered away.</p>
-                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#carbon">learn more</a>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#carbon">learn more</a>
                   <!-- Modal -->
                   <div id="carbon" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -292,7 +299,7 @@
                   <p>Do not worry about the size</p>
                   <p>of your plants, your box is</p>
                   <p>scalable.</p>
-                  <a class="slide-btn smoth-scroll" data-toggle="modal" data-target="#modular">learn more</a>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#modular">learn more</a>
                   <!-- Modal -->
                   <div id="modular" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -562,6 +569,22 @@
         <div class="row">
         <!-- START CONTACT DETAILS DESIGN AREA -->
         <div class="col-md-offset-3 col-md-6">
+          
+            <div class="thumbnail center well well-small text-center">
+            <% if cookies[:saved_member] %>
+            <p>Thanks for joining Plantindoor's newsletter! We are working to send you the discount very soon<p>
+          <% else %>
+                <h2>Newsletter</h2>
+                
+                <p>Subscribe to our Newsletter and get your 15% OFF.</p>
+                
+                <%= form_for @member, remote: true, :html => {:class => "input-prepend", :class => "add-on", :class => "icon-envelope"} do |f| %>
+                  <%= f.email_field :email, placeholder: "your@email.com" %>
+                  <%= f.submit 'Subscribe' %>
+                  <% end %>
+                <% end %>
+            </div>
+            
           <div class="contact-details">
             <div class="single-contact">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -616,12 +639,3 @@
     </div>
   </div>
     <!-- / END SCROOL UP DESIGN AREA -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-55005309-4', 'auto');
-    ga('send', 'pageview');
-  </script>

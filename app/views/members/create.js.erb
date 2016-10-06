@@ -1,0 +1,5 @@
+<% if @member.errors.any? %>
+	 swal("Error to subscribe ", "<%= @member.errors.full_messages.first %>")
+<% else %>
+	$("#new_member").hide()
+<% end %>
