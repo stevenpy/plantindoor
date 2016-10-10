@@ -1,6 +1,6 @@
 class MembersController < ApplicationController
 	def create
-		@member = Member.new member_params
+		@member = Member.first_or_create member_params
 
 		respond_to do |format|
 			if @member.save
