@@ -1,6 +1,6 @@
 class MembersController < ApplicationController
 	def create
-		@member = Member.first_or_create member_params
+		@member = Member.where(email: params['member']['email']).first_or_create
 
 		respond_to do |format|
 			if @member.save
