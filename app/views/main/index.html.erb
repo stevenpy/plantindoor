@@ -15,8 +15,7 @@
             <div class="logo">
             	<%= link_to(root_path) do %>
                 <%= image_tag "team/logo-b.png", class: "", alt: "" %>
-                <% end %>
-
+              <% end %>
             </div>
             <!-- END LOGO DESIGN AREA -->
           </div>
@@ -76,7 +75,7 @@
         <div class="col-sm-12">
           <!-- START SECTION TITLE DESIGN AREA -->
           <div class="section-title text-center">
-            <h2>About <span>plantindoor</span></h2>
+            <h2>About <%= image_tag "team/plantindoor.jpg", class: "", alt: "" %></h2>
           </div>
         <!-- / END SECTION TITLE DESIGN AREA -->
         </div>
@@ -113,7 +112,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section-title text-center">
-              <h2><span>plantindoor</span> features</h2>
+              <h2><%= image_tag "team/plantindoor.jpg", class: "", alt: "" %> features</h2>
             </div>
           </div>
         </div>
@@ -190,7 +189,7 @@
               <!-- START SINGLE SERVICES DESIGN AREA -->
               <div class="col-md-4 col-sm-6">
                 <div class="single-service">
-                  <i class="fa fa-cloud"></i>
+                  <i class="fa fa-magic"></i>
                   <h4>Worry free</h4>
                   <p>Choose the best recipe</p>
                   <p>for your plants and watch</p>
@@ -312,6 +311,7 @@
                               <h4 class="modal-title">100% Modular</h4>
                             </div>
                             <div class="modal-body">
+                              <%= image_tag "testimonial/tes.jpg", alt: "" %>
                               <p>Whatever the number, whatever the height or your plants you can design and build your own PIbox !</p>
                             </div>
                             <div class="modal-footer">
@@ -336,7 +336,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section-title text-center">
-              <h2>meet team <span>plantindoor</span></h2>
+              <h2>meet team <%= image_tag "team/plantindoor.jpg", class: "", alt: "" %></h2>
             </div>
           </div>
         </div>
@@ -397,7 +397,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section-title text-center">
-              <h2>What plants can you grow with <span>plantindoor</span> ?</h2>
+              <h2>What plants can you grow with <%= image_tag "team/plantindoor.jpg", class: "", alt: "" %> ?</h2>
             </div>
           </div>
         </div>
@@ -534,7 +534,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="section-title text-center">
-                        <h2><span>plantindoor</span> forum</h2>
+                        <h2><%= image_tag "team/plantindoor.jpg", class: "", alt: "" %> forum</h2>
                     </div>
                 </div>
             </div>
@@ -569,21 +569,21 @@
         <div class="row">
         <!-- START CONTACT DETAILS DESIGN AREA -->
         <div class="col-md-offset-3 col-md-6">
-          
-            <div class="thumbnail center well well-small text-center">
+          <div class="thumbnail center well well-small text-center section-title">
             <% if cookies[:saved_member] %>
-            <p>Thanks for joining Plantindoor's newsletter! We are working to send you the discount very soon<p>
-          <% else %>
-                <h2>Newsletter</h2>
-                
-                <p>Subscribe to our Newsletter and get your 15% OFF.</p>
-                
-                <%= form_for @member, remote: true, :html => {:class => "input-prepend", :class => "add-on", :class => "icon-envelope"} do |f| %>
-                  <%= f.email_field :email, placeholder: "your@email.com" %>
-                  <%= f.submit 'Subscribe' %>
-                  <% end %>
-                <% end %>
-            </div>
+              <p>Thanks for joining Plantindoor's newsletter! We are working to send you the discount very soon<p>
+            <% else %>
+              <h2>Newsletter</h2>
+              <p>Subscribe to our Newsletter and get your 30% OFF coupon.</p>
+                <%= form_for @member, remote: true do |f| %>
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <%= f.email_field :email, placeholder: "your@email.com", class: "form-control" %>
+                </div>
+                </br>
+              <%= f.submit 'Subscribe', class: "btn btn-large" %>
+            <% end %>
+          <% end %>
+        </div>
             
           <div class="contact-details">
             <div class="single-contact">
@@ -608,7 +608,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="footer-text text-center">
-            <h1>Plantindoor</h1>
+            <h1><%= image_tag "testimonial/banniere2.jpg", class: "", alt: "" %></h1>
             <div class="footer-social-link">
               <ul>
                 <li><a href="https://www.facebook.com/plantindoor"><i class="fa fa-facebook"></i></a></li>

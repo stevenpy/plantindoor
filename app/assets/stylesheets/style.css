@@ -80,6 +80,10 @@ Version      : 1.0
     padding: 0;
 }
 
+.hero h3 {
+    font-size: 18px;
+}
+
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
@@ -151,7 +155,7 @@ Version      : 1.0
     .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+    .hero h1 { font-size: 3em; }    
 }
 
 /*
