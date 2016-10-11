@@ -26,6 +26,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 gem 'rails-assets-sweetalert2', source: 'https://rails-assets.org'
 gem 'google-analytics-rails', '1.1.0'
+gem 'gibbon'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -39,6 +40,8 @@ gem 'rails_12factor', group: :production
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'dotenv-rails'
+  gem 'pry'
 end
 
 group :development do
