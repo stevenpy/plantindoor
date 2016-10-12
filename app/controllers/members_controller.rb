@@ -4,6 +4,7 @@ class MembersController < ApplicationController
 
 		respond_to do |format|
 			if @member.save
+        format.js if @member.errors.any?
 				cookies[:saved_member] = true
 				format.html { redirect_to root_path, notice: "Registered successfully!" }
 			else
