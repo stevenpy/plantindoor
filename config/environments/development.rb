@@ -1,15 +1,4 @@
 Rails.application.configure do
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-  address:              'smtpout.secureserver.net',
-  port:                 80,
-  domain:               'plantindoor.com',
-  user_name:            ENV['GODADDY_USERNAME'],
-  password:             ENV['GODADDY_PSW'],
-  authentication:       'plain',
-  enable_starttls_auto: true  }
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
