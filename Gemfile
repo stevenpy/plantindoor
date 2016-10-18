@@ -33,7 +33,10 @@ gem 'gibbon'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'rails_12factor', group: :production
+group :production do
+	gem 'rails_12factor'
+	gem 'pry-rails'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -53,4 +56,3 @@ group :development do
 end
 
 ruby "2.3.0"
-
