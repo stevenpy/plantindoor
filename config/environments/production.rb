@@ -7,7 +7,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtpout.secureserver.net',
     port:                 80,
-    domain:               'plantindoor.com',
+    domain:               'www.plantindoor.com',
     user_name:            ENV['GODADDY_USERNAME'],
     password:             ENV['GODADDY_PSW'],
     authentication:       'plain',
