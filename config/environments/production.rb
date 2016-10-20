@@ -7,7 +7,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtpout.secureserver.net',
     port:                 80,
-    domain:               'www.plantindoor.com',
+    domain:               'plantindoor.com',
     user_name:            ENV['GODADDY_USERNAME'],
     password:             ENV['GODADDY_PSW'],
     authentication:       'plain',
@@ -17,6 +17,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_options = {from: 'contact@plantindoor.com'}
+  config.action_mailer.default_url_options = {host: 'plantindoor.com'}
 
   config.action_mailer.delivery_method = :sendmail
   # Defaults to:
