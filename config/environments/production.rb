@@ -2,22 +2,6 @@ Rails.application.configure do
 
 
   # Settings specified here will take precedence over those in config/application.rb.
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtpout.secureserver.net',
-    port:                 80,
-    domain:               'plantindoor.com',
-    user_name:            ENV['GODADDY_USERNAME'],
-    password:             ENV['GODADDY_PSW'],
-    authentication:       'plain',
-    enable_starttls_auto: true,
-  }
-
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'contact@plantindoor.com'}
-
   
   # Defaults to:
   # config.action_mailer.sendmail_settings = {
