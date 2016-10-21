@@ -86,4 +86,6 @@ Rails.application.configure do
 
   # Google Analytics
   GA.tracker = "UA-55005309-4"
+
+  config.action_mailer.default_url_options = { host: 'plantindoor.com' }
 end
