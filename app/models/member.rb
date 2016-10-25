@@ -1,5 +1,5 @@
 class Member < ActiveRecord::Base
-  after_save :add_member_to_mailchimp
+  # after_save :add_member_to_mailchimp
 	validates :email, presence: true
 
 	private
