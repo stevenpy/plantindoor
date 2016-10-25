@@ -4,7 +4,6 @@ class MembersController < ApplicationController
 
 		respond_to do |format|
 			if @member.save
-        format.js if @member.errors.any?
 				cookies[:saved_member] = true
 				MemberMailer.welcome_email(@member.email).deliver_later
 				format.html { redirect_to root_path, notice: "Registered successfully!" }
