@@ -6,7 +6,6 @@ services:
   - postgresql
 before_script:
   - psql -c 'create database plantindoor_ci_test;' -U postgres
-script: bundle exec rails spec
 notifications:
   email:
     on_failure: change
