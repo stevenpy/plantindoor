@@ -33,14 +33,14 @@
                 </div>
                 <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a class="smoth-scroll" href="#home">Home <div class="ripple-wrapper"></div></a></li>
-                    <li><a class="smoth-scroll" href="#about">Video</a></li>
-                    <li><a class="smoth-scroll" href="#service">PI Box</a></li>
-                    <li><a class="smoth-scroll" href="#pigrow">PI Grow</a></li>
-                    <li><a class="smoth-scroll" href="#work">plants</a></li>
-                    <li><a class="smoth-scroll" href="#blog">forum</a></li>
-                    <li><a class="smoth-scroll" href="#team">team</a></li>
-                    <li><a class="smoth-scroll" href="#contact">contact</a></li>
+                    <li class="active"><a class="smoth-scroll" href="#home"><%=I18n.t("index.navbar.home")%> <div class="ripple-wrapper"></div></a></li>
+                    <li><a class="smoth-scroll" href="#about"><%=I18n.t("index.navbar.video")%></a></li>
+                    <li><a class="smoth-scroll" href="#service"><%=I18n.t("index.navbar.pibox")%></a></li>
+                    <li><a class="smoth-scroll" href="#pigrow"><%=I18n.t("index.navbar.pigrow")%></a></li>
+                    <li><a class="smoth-scroll" href="#work"><%=I18n.t("index.navbar.plants")%></a></li>
+                    <li><a class="smoth-scroll" href="#blog"><%=I18n.t("index.navbar.forum")%></a></li>
+                    <li><a class="smoth-scroll" href="#team"><%=I18n.t("index.navbar.team")%></a></li>
+                    <li><a class="smoth-scroll" href="#contact"><%=I18n.t("index.navbar.contact")%></a></li>
                   </ul>
                 </div>
               </div>
@@ -58,9 +58,9 @@
           <div class="hero">
             <hgroup>
               <%= image_tag "team/logo_wall.png", class: "", alt: "" %>
-              <h4>Presents</h4>
-              <h1>the PI Box</h1>
-              <h4>The 1st automatic and modular growing system</h4>
+              <h4><%=I18n.t("index.content.home.presents")%></h4>
+              <h1><%=I18n.t("index.content.home.thepibox")%></h1>
+              <h4><%=I18n.t("index.content.home.thefirst")%></h4>
             </hgroup>
           </div>
         </div>
@@ -92,10 +92,10 @@
                 <!-- START ABOUT US TEXT DESIGN AREA -->
                 <div class="col-md-6">
                     <div class="about-text video-margin-top">
-                        <p>We are 3 entrepreneurs invested and passioned, we have designed this project by bringing together all our skills: software engineer, electro-technical and commercial. We have travelled, shared our ideas, sought after plants and made this a living project, today it's up to you to play! Made live and vibrate! </p>
-                        <p>We come on Kickstarter today to develop our project and industrialize it. After more than a year of work we have designed plans, a big part of the program as well as the modular prototype. Our box is almost ready to serve you.   </p>
-                        <p>This is to provide you with the widest plant library possible and develop programs and performance of your PI BOX, we want the development of this project through Kickstarter. We can get out the first versions on the market end of 2017, with your help.</p>
-                        <p>Our application is community based sharing of knowledge, we wish that our company Plant Indoor remains equal to this image. Modulate, plant and share... Your PI BOX will give your plant, the attention necessary to a successful plantation with quality. </p>
+                        <p><%= I18n.t("index.content.video.paragraph1")%></p>
+                        <p><%= I18n.t("index.content.video.paragraph2") %></p>
+                        <p><%= I18n.t("index.content.video.paragraph3") %></p>
+                        <p><%= I18n.t("index.content.video.paragraph4") %></p>
                     </div>
                 </div>
                 <!-- / END ABOUT US TEXT DESIGN AREA -->
@@ -151,11 +151,11 @@
           <div class="col-md-4 col-sm-6">
               <div class="single-service">
                   <%= image_tag "company/water.png", alt: "" %>
-                  <h4>Automatic watering</h4>
-                  <p>Gives your plants the proper</p>
-                  <p>water and nutrients. Never</p>
-                  <p>forget to water again.</p>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#watering">learn more</a>
+                  <h4><%= I18n.t("index.content.pibox.automatic.title")%></h4>
+                  <p><%= I18n.t("index.content.pibox.automatic_des1")%></p>
+                  <p><%= I18n.t("index.content.pibox.automatic_des2")%></p>
+                  <p><%= I18n.t("index.content.pibox.automatic_des3")%></p>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#watering"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="watering" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -166,11 +166,11 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">×</button>
-                              <h4 class="modal-title">Automatic watering</h4>
+                              <h4 class="modal-title"><%= I18n.t("index.content.pibox.automatic.mod.title")%></h4>
                             </div>
                             <div class="modal-body">
                               <%= image_tag "testimonial/learn_more_hydro.png", alt: "" %>
-                              <p>With pH, TDS and EC sensors equipped, be sure to maintain a balanced pH in your reservoir.</p>
+                              <p><%= I18n.t("index.content.pibox.automatic.mod.body")%></p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -187,11 +187,11 @@
               <div class="col-md-4 col-sm-6">
                 <div class="single-service">
                   <%= image_tag "company/temp.png", alt: "" %>
-                  <h4>Temperature control</h4>
-                  <p>Ensures that your plants </p>
-                  <p>are always thriving in the</p>
-                  <p>right temperature.</p>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#temperature">learn more</a>
+                  <h4><%= I18n.t("index.content.pibox.temp.title")%></h4>
+                  <p><%= I18n.t("index.content.pibox.temp_des1")%></p>
+                  <p><%= I18n.t("index.content.pibox.temp_des2")%></p>
+                  <p><%= I18n.t("index.content.pibox.temp_des3")%></p>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#temperature"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="temperature" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -201,11 +201,11 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">×</button>
-                              <h4 class="modal-title">Temperature and humidity control</h4>
+                              <h4 class="modal-title"><%= I18n.t("index.content.pibox.temp.mod.title")%></h4>
                             </div>
                             <div class="modal-body">
                             <%= image_tag "testimonial/learn_more_app.png", alt: "" %>
-                              <p>Grow with a precise control over the temperature and humidity. Each plant has its own needs and a specific environment that deserve to be respected</p>
+                              <p><%= I18n.t("index.content.pibox.temp.mod.body")%></p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -222,11 +222,11 @@
               <div class="col-md-4 col-sm-6">
                 <div class="single-service">
                   <%= image_tag "company/nutrient.png", alt: "" %>
-                  <h4>Worry free</h4>
-                  <p>Choose the best recipe</p>
-                  <p>for your plants and watch</p>
-                  <p>them grow.</p>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#humidity">learn more</a>
+                  <h4><%= I18n.t("index.content.pibox.worry.title")%></h4>
+                  <p><%= I18n.t("index.content.pibox.worry_des1")%></p>
+                  <p><%= I18n.t("index.content.pibox.worry_des2")%></p>
+                  <p><%= I18n.t("index.content.pibox.worry_des3")%></p>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#humidity"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="humidity" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -236,11 +236,11 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">×</button>
-                              <h4 class="modal-title">Worry free</h4>
+                              <h4 class="modal-title"><%= I18n.t("index.content.pibox.worry.mod.title")%></h4>
                             </div>
                             <div class="modal-body">
                             <%= image_tag "testimonial/learn_more_pigrow.png", alt: "" %>
-                              <p>Our pre-recorded recipe allow to start your planting without difficulty. Choose a recipe, have a sit and watch them grow! If you are an expert, take the control of the PIbox, create your own recipe and share it to your friends. </p>
+                              <p><%= I18n.t("index.content.pibox.worry.mod.body")%></p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -257,11 +257,11 @@
               <div class="col-md-4 col-sm-6">
                 <div class="single-service">
                   <%= image_tag "company/light.png", alt: "" %>
-                  <h4>Photons light</h4>
-                  <p>Specialized LEDs give your</p>
-                  <p>plants the perfect color and </p>
-                  <p>covering an 8-colour spectrum.</p>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#light">learn more</a>
+                  <h4><%= I18n.t("index.content.pibox.photon.title")%></h4>
+                  <p><%= I18n.t("index.content.pibox.photon_des1")%></p>
+                  <p><%= I18n.t("index.content.pibox.photon_des2")%></p>
+                  <p><%= I18n.t("index.content.pibox.photon_des3")%></p>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#light"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="light" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -271,12 +271,11 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">×</button>
-                              <h4 class="modal-title">Premium LED Light 400W Dimmable</h4>
+                              <h4 class="modal-title"><%= I18n.t("index.content.pibox.photon.mod.title")%></h4>
                             </div>
                             <div class="modal-body">
                               <%= image_tag "testimonial/learn_more_lamp.png", alt: "" %>
-                              <p>Powerful and dimmable 400W LED Light will allow you to choose the intensity of light, very usefull along your plant life.
-                              Our handcrafted LED Light is made to cover your vegetables/fruits/medicine color spectrum.</p>
+                              <p><%= I18n.t("index.content.pibox.photon.mod.body")%></p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -293,11 +292,11 @@
               <div class="col-md-4 col-sm-6">
                 <div class="single-service">
                   <%= image_tag "company/filter.png", alt: "" %>
-                  <h4>carbon filter</h4>
-                  <p>Whatever smell your organic</p>
-                  <p>matter might produce</p>
-                  <p>is filtered away.</p>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#carbon">learn more</a>
+                  <h4><%= I18n.t("index.content.pibox.carbon.title")%></h4>
+                  <p><%= I18n.t("index.content.pibox.carbon_des1")%></p>
+                  <p><%= I18n.t("index.content.pibox.carbon_des2")%></p>
+                  <p><%= I18n.t("index.content.pibox.carbon_des3")%></p>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#carbon"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="carbon" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -307,12 +306,11 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">×</button>
-                              <h4 class="modal-title">Built-in carbon filter</h4>
+                              <h4 class="modal-title"><%= I18n.t("index.content.pibox.carbon.mod.title")%></h4>
                             </div>
                             <div class="modal-body">
                               <%= image_tag "testimonial/learn_more_carbon.png", alt: "" %>
-                              <p>All the air from the grow chamber passes through our active built-in carbon to absorb all smells and other impurities.</p>
-                              <p></p>
+                              <p><%= I18n.t("index.content.pibox.carbon.mod.body")%></p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -329,11 +327,11 @@
               <div class="col-md-4 col-sm-6">
                 <div class="single-service">
                   <%= image_tag "company/modular.png", alt: "" %>
-                  <h4>100% Modular</h4>
-                  <p>Do not worry about the size</p>
-                  <p>of your plants, your box is</p>
-                  <p>scalable.</p>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#modular">learn more</a>
+                  <h4><%= I18n.t("index.content.pibox.modular.title")%></h4>
+                  <p><%= I18n.t("index.content.pibox.modular_des1")%></p>
+                  <p><%= I18n.t("index.content.pibox.modular_des2")%></p>
+                  <p><%= I18n.t("index.content.pibox.modular_des3")%></p>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#modular"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="modular" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -343,11 +341,11 @@
                           <div class="modal-content">
                             <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">×</button>
-                              <h4 class="modal-title">100% Modular</h4>
+                              <h4 class="modal-title"><%= I18n.t("index.content.pibox.modular.mod.title")%></h4>
                             </div>
                             <div class="modal-body">
                               <%= image_tag "testimonial/learn_more_box.png", alt: "" %>
-                              <p>Whatever the number, whatever the height or your plants you can design and build your own PIbox !</p>
+                              <p><%= I18n.t("index.content.pibox.modular.mod.body")%></p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -378,22 +376,22 @@
         </div>
       </div>
       <div class="row">
-                <!-- START ABOUT IMAGE DESIGN AREA -->
-                <div class="col-md-6">
-                  <%= image_tag "company/fond.png", class: "img-responsive center-block", alt: "" %>
-                </div>
-                <!-- / END ABOUT US IMAGE AREA -->
-                <!-- START ABOUT US TEXT DESIGN AREA -->
-                <div class="col-md-6">
-                    <div class="about-text video-margin-top">
-                        <p>If you do not have a green thumb this app is made for you. Choose your plant in the catalog and your box will start the corresponding program. The pre-recorded program allow you to start your planting without difficulty. The computer deals you watering and lighting. </p>
-                        <p>The lighting time in growth or flowering suitable for your plant as well as ventilation are handled for you. Humidity, temperature, pH and much more are permanently controlled and PI Box manages and corrects the climate for your plants to thrive.</p>
-                        <p>Already an expert ?</p>
-                        <p>Create your recipe by choosing the lighting time, the humidity inside, the fertilizer use, temperature rate... Take control of the PI Box.</p>
-                    </div>
-                </div>
-                <!-- / END ABOUT US TEXT DESIGN AREA -->
-            </div>
+      <!-- START ABOUT IMAGE DESIGN AREA -->
+        <div class="col-md-6">
+          <%= image_tag "company/fond.png", class: "img-responsive center-block", alt: "" %>
+        </div>
+        <!-- / END ABOUT US IMAGE AREA -->
+        <!-- START ABOUT US TEXT DESIGN AREA -->
+        <div class="col-md-6">
+          <div class="about-text video-margin-top">
+            <p><%= I18n.t("index.content.pigrow.about.title1")%> </p>
+            <p><%= I18n.t("index.content.pigrow.about.title2")%></p>
+            <p><%= I18n.t("index.content.pigrow.about.title3")%></p>
+            <p><%= I18n.t("index.content.pigrow.about.title4")%></p>
+          </div>
+        </div>
+        <!-- / END ABOUT US TEXT DESIGN AREA -->
+      </div>
     </div>
   </section>
     <!-- / END ABOUT US DESIGN AREA -->
@@ -404,16 +402,16 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section-title text-center">
-              <h2>What plants can you grow with <%= image_tag "team/plantindoor.png", class: "", alt: "" %> ?</h2>
+              <h2><%= I18n.t("index.content.plant.title")%><%= image_tag "team/plantindoor.png", class: "", alt: "" %> ?</h2>
             </div>
           </div>
         </div>
         <div class="row">
           <ul class="work">
             <li class="filter" data-filter="all">all</li>
-            <li class="filter" data-filter=".development">Vegetables</li>
-            <li class="filter" data-filter=".photography">Fruits</li>
-            <li class="filter" data-filter=".webdesign">Medicine</li>
+            <li class="filter" data-filter=".development"><%= I18n.t("index.content.plant.filter.vegetable")%></li>
+            <li class="filter" data-filter=".photography"><%= I18n.t("index.content.plant.filter.fruit")%></li>
+            <li class="filter" data-filter=".webdesign"><%= I18n.t("index.content.plant.filter.medicine")%></li>
           </ul>
         </div>
         <div class="work-inner">
@@ -423,9 +421,9 @@
               <div class="item">
                 <%= image_tag "portfolio/tomato.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>tomato</h4>
+                  <h4><%= I18n.t("index.content.plant.tomato.caption.title")%></h4>
 
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#chien">learn more</a>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#chien"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="chien" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -435,13 +433,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Tomato</h3>
-                                <p>Recommended pH: 5.5 to 6.5</p>
-                                <p>Plant spacing: 40-60 cm (3-5 plants / m2)</p>
-                                <p>Germination temperature and time: 4-6 days; 20 to 30 °C</p>
-                                <p>Growth time: 50-70 days</p>
-                                <p>Optimum temperature: 13-16 °C at night, the day of 22-26 °C</p>
-                                <p>Plant height and width: 60-120 cm; 60-80 cm</p>
+                                <h3><%= I18n.t("index.content.plant.tomato.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.tomato.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.tomato.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.tomato.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.tomato.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.tomato.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.tomato.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -461,8 +459,8 @@
               <div class="item">
                 <%= image_tag "portfolio/coriander.png", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>coriander</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#coriander">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.coriander.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#coriander"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="coriander" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -472,13 +470,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Coriander</h3>
-                                <p>Recommended pH: 6 to 7</p>
-                                <p>Plant spacing: 15-30 cm (15-20 plants / m2)</p>
-                                <p>Germination temperature and time: 7-10 days; 20 to 25 °C</p>
-                                <p>Growth time: 30-40 days</p>
-                                <p>Optimum temperature: 16-25 °C</p>
-                                <p>Plant height and width: 30-40 cm; 30-40 cm</p>
+                                <h3><%= I18n.t("index.content.plant.coriander.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.coriander.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.coriander.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.coriander.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.coriander.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.coriander.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.coriander.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -498,8 +496,8 @@
               <div class="item">
                 <%= image_tag "portfolio/strawberry.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>strawberry</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#strawberry">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.strawberry.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#strawberry"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="strawberry" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -509,13 +507,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Strawberry</h3>
-                                <p>Recommended pH: 5.5 to 6.0</p>
-                                <p>Plant spacing: 50-60 cm (3-4 plants / m2)</p>
-                                <p>Germination temperature and time: 3-5 days; 20 to 30 °C</p>
-                                <p>Growth time: 60-70 days</p>
-                                <p>Optimum temperature: 13-16 °C at night, the day of 22-26 °C and low humidity</p>
-                                <p>Plant height and width: 60-80 cm; 60-80 cm</p>
+                                <h3><%= I18n.t("index.content.plant.strawberry.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.strawberry.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.strawberry.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.strawberry.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.strawberry.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.strawberry.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.strawberry.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -535,8 +533,8 @@
               <div class="item">
                 <%= image_tag "portfolio/pepper.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>pepper</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#pepper">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.pepper.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#pepper"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="pepper" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -546,13 +544,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Pepper</h3>
-                                <p>Recommended pH: 5 to 6.5</p>
-                                <p>Plant spacing: 30-60 cm (3-4 plants / m2)</p>
-                                <p>Germination temperature and time: 8-12 days; 22 to 30 °C</p>
-                                <p>Growth time: 60-95 days</p>
-                                <p>Optimum temperature: 14-16 °C at night, the day of 22-30 °C</p>
-                                <p>Plant height and width: 30-90 cm; 30-80 cm</p>
+                                <h3><%= I18n.t("index.content.plant.pepper.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.pepper.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.pepper.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.pepper.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.pepper.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.pepper.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.pepper.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -572,8 +570,8 @@
               <div class="item">
                 <%= image_tag "portfolio/bean.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>bean</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#bean">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.bean.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#bean"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="bean" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -583,13 +581,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Bean</h3>
-                                <p>Recommended pH: 5 to 7</p>
-                                <p>Plant spacing: 10-30 cm (20-30 plants / m2)</p>
-                                <p>Germination temperature and time: 8-10 days; 21 to 26 °C</p>
-                                <p>Growth time: 50-110 days depending of varieties</p>
-                                <p>Optimum temperature: 16-18 °C at night, the day of 22-26 °C</p>
-                                <p>Plant height and width: 60-80 cm</p>
+                                <h3><%= I18n.t("index.content.plant.bean.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.bean.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.bean.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.bean.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.bean.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.bean.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.bean.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -609,8 +607,8 @@
               <div class="item">
                 <%= image_tag "portfolio/salad.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>salad</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#salad">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.salad.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#salad"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="salad" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -620,13 +618,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Salad</h3>
-                                <p>Recommended pH: 5.8 to 6.3</p>
-                                <p>Plant spacing: 18-30 cm (20-25 plants / m2)</p>
-                                <p>Germination temperature and time: 3-7 days; 13 to 21 °C</p>
-                                <p>Growth time: 24-34 days</p>
-                                <p>Optimum temperature: 14-16 °C at night, the day of 21-24 °C</p>
-                                <p>Plant height and width: 20-30 cm; 25-35 cm</p>
+                                <h3><%= I18n.t("index.content.plant.salad.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.salad.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.salad.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.salad.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.salad.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.salad.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.salad.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -646,8 +644,8 @@
               <div class="item">
                 <%= image_tag "portfolio/raspberry.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>raspberry</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#raspberry">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.raspberry.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#raspberry"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="raspberry" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -657,13 +655,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Raspberry</h3>
-                                <p>Recommended pH: 5.8 to 6.5</p>
-                                <p>Plant spacing: 50-60 cm (3-4 plants / m2)</p>
-                                <p>Germination temperature and time: 4-6 days; 20 to 30 °C</p>
-                                <p>Growth time: 60-75 days</p>
-                                <p>Optimum temperature: 13-16 °C at night, the day of 22-26 °C</p>
-                                <p>Plant height and width: 60-80 cm; 60-80 cm</p>
+                                <h3><%= I18n.t("index.content.plant.raspberry.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.raspberry.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.raspberry.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.raspberry.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.raspberry.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.raspberry.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.raspberry.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -683,8 +681,8 @@
               <div class="item">
                 <%= image_tag "portfolio/amnesia-haze.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>amnesia haze</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#amnesia">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.amnesia.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#amnesia"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="amnesia" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -694,14 +692,14 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Amnesia Haze</h3>
-                                <p>Recommended pH: 5.8 to 6.2</p>
-                                <p>Plant spacing: 40-60 cm (3-5 plants / m2)</p>
-                                <p>Germination temperature and time: 4-6 days; 20 to 30 °C</p>
-                                <p>Growth time: 70-90 days</p>
-                                <p>Optimum temperature: 15-18 °C at night, the day of 24-26 °C</p>
-                                <p>Plant height and width: 80-140 cm; 60-80 cm</p>
-                                <p>Indica: 20% Sativa: 80%</p>
+                                <h3><%= I18n.t("index.content.plant.amnesia.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.amnesia.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.amnesia.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.amnesia.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.amnesia.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.amnesia.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.amnesia.mod.height")%></p>
+                                <p><%= I18n.t("index.content.plant.amnesia.mod.variety")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -721,8 +719,8 @@
               <div class="item">
                 <%= image_tag "portfolio/cucumber.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>Cucumber</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#cucumber">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.cucumber.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#cucumber"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="cucumber" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -732,13 +730,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Cucumber</h3>
-                                <p>Recommended pH: 5 to 6.5</p>
-                                <p>Plant spacing: 30-60 cm (2-5 plants / m2)</p>
-                                <p>Germination temperature and time: 3-7 days; 20 to 30 °C</p>
-                                <p>Growth time: 55-65 days</p>
-                                <p>Optimum temperature: 18-20 °C at night, the day of 22-28 °C</p>
-                                <p>Plant height and width: 20-180 cm; 20-80 cm</p>
+                                <h3><%= I18n.t("index.content.plant.cucumber.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.cucumber.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.cucumber.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.cucumber.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.cucumber.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.cucumber.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.cucumber.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -757,8 +755,8 @@
               <div class="item">
                 <%= image_tag "portfolio/parsley.png", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>parsley</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#parsley">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.parsley.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#parsley"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="parsley" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -768,13 +766,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Parsley</h3>
-                                <p>Recommended pH: 6 to 7</p>
-                                <p>Plant spacing: 15-30 cm (15-20 plants / m2)</p>
-                                <p>Germination temperature and time: 8-10 days; 20 to 25 °C</p>
-                                <p>Growth time: 30-40 days</p>
-                                <p>Optimum temperature: 15-25 °C</p>
-                                <p>Plant height and width: 30-50 cm; 30-40 cm</p>
+                                <h3><%= I18n.t("index.content.plant.parsley.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.parsley.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.parsley.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.parsley.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.parsley.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.parsley.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.parsley.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -794,8 +792,8 @@
               <div class="item">
                 <%= image_tag "portfolio/white-widow.jpg", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>White widow</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#widow">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.white.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#widow"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="widow" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -805,14 +803,14 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>White Widow</h3>
-                                <p>Recommended pH: 5.8 to 6.5</p>
-                                <p>Plant spacing: 40-60 cm (3-5 plants / m2)</p>
-                                <p>Germination temperature and time: 4-6 days; 20 to 30 °C</p>
-                                <p>Growth time: 60-65 days</p>
-                                <p>Optimum temperature: 13-16 °C at night, the day of 22-26 °C</p>
-                                <p>Plant height and width: 60-140 cm; 60-80 cm</p>
-                                <p>Indica: 60% Sativa: 40% </p>
+                                <h3><%= I18n.t("index.content.plant.white.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.white.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.white.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.white.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.white.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.white.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.white.mod.height")%></p>
+                                <p><%= I18n.t("index.content.plant.white.mod.variety")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -832,8 +830,8 @@
               <div class="item">
                 <%= image_tag "portfolio/basilic.png", alt: "" %>
                 <div class="portfolio-caption">
-                  <h4>basilic</h4>
-                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#basilic">learn more</a>
+                  <h4><%= I18n.t("index.content.plant.basilic.caption.title")%></h4>
+                  <a class="slide-btn smoth-scroll" href="" data-toggle="modal" data-target="#basilic"><%= I18n.t("index.content.pibox.learn")%></a>
                   <!-- Modal -->
                   <div id="basilic" class="modal fade" role="dialog">
                     <div class="vertical-alignment-helper">
@@ -843,13 +841,13 @@
                           <div class="modal-content">
                             <div class="modal-body">
                               <ul>
-                                <h3>Basilic</h3>
-                                <p>Recommended pH: 5 to 6.5</p>
-                                <p>Plant spacing: 15-25 cm (20-25 plants / m2)</p>
-                                <p>Germination temperature and time: 6-7 days; 20 to 25 °C</p>
-                                <p>Growth time: 35-45 days</p>
-                                <p>Optimum temperature: 16-18 °C at night, the day of 20-25 °C</p>
-                                <p>Plant height and width: 20-30 cm; 20-30 cm</p>
+                                <h3><%= I18n.t("index.content.plant.basilic.mod.title")%></h3>
+                                <p><%= I18n.t("index.content.plant.basilic.mod.ph")%></p>
+                                <p><%= I18n.t("index.content.plant.basilic.mod.spacing")%></p>
+                                <p><%= I18n.t("index.content.plant.basilic.mod.temp")%></p>
+                                <p><%= I18n.t("index.content.plant.basilic.mod.time")%></p>
+                                <p><%= I18n.t("index.content.plant.basilic.mod.opti")%></p>
+                                <p><%= I18n.t("index.content.plant.basilic.mod.height")%></p>
                               </ul>
                             </div>
                             <div class="modal-footer">
@@ -886,7 +884,7 @@
                 <div class="col-md-offset-4 col-md-4">
                     <div class="single-blog">
                     	<%= image_tag "blog/growth_plant.jpg", class: "img-responsive", alt: "" %>
-                        <a href="single-blog.html"><h4>Our forum is coming soon</h4></a>
+                        <a href="single-blog.html"><h4><%= I18n.t("index.content.forum.blog")%></h4></a>
                         <h6 class="text-muted">02 oct 16</h6>
                         <p></p>
                         <!-- <a href="single-blog.html" class="read-more">Read more</a> -->
@@ -904,7 +902,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section-title text-center">
-              <h2>meet team <%= image_tag "team/plantindoor.png", class: "", alt: "" %></h2>
+              <h2><%= I18n.t("index.content.team.title")%> <%= image_tag "team/plantindoor.png", class: "", alt: "" %></h2>
             </div>
           </div>
         </div>
@@ -964,7 +962,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="section-title text-center">
-              <h2>contact <span>us</span></h2>
+              <h2><%= I18n.t("index.content.contact.title")%> <span><%= I18n.t("index.content.contact.titlebis")%></span></h2>
             </div>
           </div>
         </div>
@@ -973,10 +971,10 @@
         <div class="col-md-offset-3 col-md-6">
           <div class="thumbnail center well well-small text-center section-title">
             <% if cookies[:saved_member] %>
-              <p>Thanks for joining Plantindoor's newsletter! We are working to send you the discount very soon<p>
+              <p><%= I18n.t("index.content.contact.thanks")%><p>
             <% else %>
-              <h2>Newsletter</h2>
-              <p>Subscribe to our Newsletter and get your 30% OFF coupon.</p>
+              <h2><%= I18n.t("index.content.contact.newsletter")%></h2>
+              <p><%= I18n.t("index.content.contact.loop")%></p>
                 <%= form_for @member, remote: true do |f| %>
                 <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                   <%= f.email_field :email, placeholder: "your@email.com", class: "form-control" %>
