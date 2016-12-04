@@ -1,23 +1,248 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  <%= I18n:
+    t("index:
+      content:
+        plant:
+          raspberry:
+            caption:
+              title")%>: Raspberry
+  height: 'Optimum temperature: 13-16 °C at night, the day of 22-26 °C and low humidity'
+  hello: Hello world
+  index:
+    content:
+      contact:
+        loop: Subscribe to our Newsletter and get your 30% OFF coupon.
+        newsletter: Newsletter
+        thanks: Thanks for joining Plantindoor's newsletter! We are working to send you the discount very soon
+        title: contact
+        titlebis: us
+      forum:
+        blog: Our forum is coming soon
+      home:
+        presents: presents
+        thefirst: the 1st automatic and modular growing system
+        thepibox: the pi box
+      pibox:
+        automatic:
+          mod:
+            body: With pH, TDS and EC sensors equipped, be sure to maintain a balanced pH in your reservoir.
+            title: Automatic watering
+          title: Automatic watering
+        automatic_des1: Gives your plants the proper
+        automatic_des2: water and nutrients. Never
+        automatic_des3: forget to water again.
+        automatic_mod: With pH, TDS and EC sensors equipped, be sure to maintain a balanced pH in your reservoir.
+        carbon:
+          mod:
+            body: All the air from the grow chamber passes through our active built-in carbon to absorb all smells and other impurities.
+            title: Built-in carbon filter
+          title: Carbon filter
+        carbon_des1: Whatever smell your organic
+        carbon_des2: matter might produce
+        carbon_des3: is filtered away.
+        learn: learn more
+        learnmore: learn more
+        modular:
+          mod:
+            body: Whatever the number, whatever the height or your plants you can design and build your own PIbox!
+            title: 100% Modular
+          title: 100% Modular
+        modular_des1: Do not worry about the size
+        modular_des2: of your plants, your box is
+        modular_des3: scalable.
+        photon:
+          mod:
+            body: Powerful and dimmable 400W LED Light will allow you to choose the intensity of light, very usefull along your plant life. Our handcrafted LED Light is made to cover your vegetables/fruits/medicine color spectrum.
+            title: Premium LED Light 400W Dimmable
+          title: Photons light
+        photon_des1: Specialized LEDs give your
+        photon_des2: plants the perfect color and
+        photon_des3: covering an 8-colour spectrum.
+        temp:
+          mod:
+            body: Grow with a precise control over the temperature and humidity. Each plant has its own needs and a specific environment that deserve to be respected.
+            title: Temperature control
+          title: Temperature control
+        temp_des1: Ensures that your plants
+        temp_des2: are always thriving in the
+        temp_des3: right temperature.
+        worry:
+          mod:
+            body: Our pre-recorded recipe allow to start your planting without difficulty. Choose a recipe, have a sit and watch them grow! If you are an expert, take the control of the PIbox, create your own recipe and share it to your friends.
+            title: Worry free
+          title: Worry free
+        worry_des1: Choose the best recipe
+        worry_des2: for your plants and watch
+        worry_des3: them grow.
+      pigrow:
+        about:
+          title1: If you do not have a green thumb this app is made for you. Choose your plant in the catalog and your box will start the corresponding program. The pre-recorded program allow you to start your planting without difficulty. The computer deals you watering and lighting.
+          title2: The lighting time in growth or flowering suitable for your plant as well as ventilation are handled for you. Humidity, temperature, pH and much more are permanently controlled and PI Box manages and corrects the climate for your plants to thrive.
+          title3: Already an expert ?
+          title4: Create your recipe by choosing the lighting time, the humidity inside, the fertilizer use, temperature rate... Take control of the PI Box.
+        paragraph1: If you do not have a green thumb this app is made for you. Choose your plant in the catalog and your box will start the corresponding program. The pre-recorded program allow you to start your planting without difficulty. The computer deals you watering and lighting.
+        paragraph2: The lighting time in growth or flowering suitable for your plant as well as ventilation are handled for you. Humidity, temperature, pH and much more are permanently controlled and PI Box manages and corrects the climate for your plants to thrive.
+        paragraph3: Already an expert?
+        paragraph4: Create your recipe by choosing the lighting time, the humidity inside, the fertilizer use, temperature rate... Take control of the PI Box.
+      plant:
+        amnesia:
+          caption:
+            title: amnesia haze
+          mod:
+            height: 'Plant height and width: 80-140 cm; 60-80 cm'
+            opti: 'Optimum temperature: 15-18 °C at night, the day of 24-26 °C'
+            ph: 'Recommended pH: 5.8 to 6.2'
+            spacing: 'Plant spacing: 40-60 cm (3-5 plants / m2)'
+            temp: 'Germination temperature and time: 4-6 days; 20 to 30 °C'
+            time: 'Growth time: 70-90 days'
+            title: Amnesia Haze
+            variety: 'Indica: 20% Sativa: 80%'
+        basilic:
+          caption:
+            title: basilic
+          mod:
+            height: 'Plant height and width: 20-30 cm; 20-30 cm'
+            opti: 'Optimum temperature: 16-18 °C at night, the day of 20-25 °C'
+            ph: 'Recommended pH: 5 to 6.5'
+            spacing: 'Plant spacing: 15-25 cm (20-25 plants / m2)'
+            temp: 'Germination temperature and time: 6-7 days; 20 to 25 °C'
+            time: 'Growth time: 35-45 days'
+            title: Basilic
+        bean:
+          caption:
+            title: bean
+          mod:
+            height: 'Plant height and width: 60-80 cm'
+            opti: 'Optimum temperature: 16-18 °C at night, the day of 22-26 °C'
+            ph: 'Recommended pH: 5 to 7'
+            spacing: 'Plant spacing: 10-30 cm (20-30 plants / m2)'
+            time: 'Growth time: 50-110 days depending of varieties'
+            title: Bean
+        coriander:
+          caption:
+            title: coriander
+          mod:
+            height: 'Plant height and width: 30-40 cm; 30-40 cm'
+            opti: 'Optimum temperature: 16-25 °C'
+            ph: 'Recommended pH: 6 to 7'
+            spacing: 'Plant spacing: 15-30 cm (15-20 plants / m2)'
+            temp: 'Germination temperature and time: 7-10 days; 20 to 25 °C'
+            time: 'Growth time: 30-40 days'
+            title: Coriander
+        cucumber:
+          caption:
+            title: Cucumber
+          mod:
+            height: 'Plant height and width: 30-50 cm; 30-40 cm'
+            opti: 'Optimum temperature: 18-20 °C at night, the day of 22-28 °C'
+            ph: 'Recommended pH: 5 to 6.5'
+            spacing: 'Plant spacing: 30-60 cm (2-5 plants / m2)'
+            temp: 'Germination temperature and time: 3-7 days; 20 to 30 °C'
+            time: 'Growth time: 55-65 days'
+            title: Cucumber
+            variety: 'Plant height and width: 20-180 cm; 20-80 cm'
+        filter:
+          fruit: Fruits
+          medicine: Medicine
+          vegetable: Vegetables
+        parsley:
+          caption:
+            title: parsley
+          mod:
+            height: 'Plant height and width: 30-50 cm; 30-40 cm'
+            opti: 'Optimum temperature: 15-25 °C'
+            ph: 'Recommended pH: 6 to 7'
+            spacing: 'Plant spacing: 15-30 cm (15-20 plants / m2)'
+            temp: 'Germination temperature and time: 8-10 days; 20 to 25 °C'
+            time: 'Growth time: 30-40 days'
+            title: Parsley
+        pepper:
+          caption:
+            title: pepper
+          mod:
+            height: 'Plant height and width: 30-90 cm; 30-80 cm'
+            opti: 'Optimum temperature: 14-16 °C at night, the day of 22-30 °C'
+            ph: 'Recommended pH: 5 to 6.5'
+            spacing: 'Plant spacing: 30-60 cm (3-4 plants / m2)'
+            temp: 'Germination temperature and time: 8-12 days; 22 to 30 °C'
+            time: 'Growth time: 60-95 days'
+            title: Pepper
+        raspberry:
+          mod:
+            height: 'Plant height and width: 60-80 cm; 60-80 cm'
+            opti: 'Optimum temperature: 13-16 °C at night, the day of 22-26 °C'
+            ph: 'Recommended pH: 5.8 to 6.5'
+            spacing: 'Plant spacing: 50-60 cm (3-4 plants / m2)'
+            temp: 'Germination temperature and time: 4-6 days; 20 to 30 °C'
+            time: 'Growth time: 60-75 days'
+            title: Raspberry
+        salad:
+          caption:
+            title: salad
+          mod:
+            height: 'Plant height and width: 20-30 cm; 25-35 cm'
+            opti: 'Optimum temperature: 14-16 °C at night, the day of 21-24 °C'
+            ph: 'Recommended pH: 5.8 to 6.3'
+            spacing: 'Plant spacing: 18-30 cm (20-25 plants / m2)'
+            temp: 'Germination temperature and time: 3-7 days; 13 to 21 °C'
+            time: 'Growth time: 24-34 days'
+            title: Salad
+        strawberry:
+          caption:
+            title: strawberry
+          mod:
+            height: 'Plant height and width: 60-80 cm; 60-80 cm'
+            opti: 'Optimum temperature: 13-16 °C at night, the day of 22-26 °C and low humidity'
+            ph: 'Recommended pH: 5.5 to 6.0'
+            spacing: 'Plant spacing: 50-60 cm (3-4 plants / m2)'
+            temp: 'Germination temperature and time: 3-5 days; 20 to 30 °C'
+            time: 'Growth time: 60-70 days'
+            title: 'StrawberryPlant height and width: 60-80 cm; 60-80 cm'
+        title: What plants can you grow with
+        tomato:
+          caption:
+            title: Tomato
+          mod:
+            height: 'Plant height and width: 60-120 cm; 60-80 cm'
+            opti: 'Optimum temperature: 13-16 °C at night, the day of 22-26 °C'
+            ph: 'Recommended pH: 5.5 to 6.5'
+            spacing: 'Plant spacing: 40-60 cm (3-5 plants / m2)'
+            temp: 'Germination temperature and time: 4-6 days; 20 to 30 °C'
+            time: 'Growth time: 50-70 days'
+            title: Tomato
+        white:
+          caption:
+            title: White widow
+          mod:
+            height: 'Plant height and width: 60-140 cm; 60-80 cm'
+            opti: 'Optimum temperature: 13-16 °C at night, the day of 22-26 °C'
+            ph: 'Recommended pH: 5.8 to 6.5'
+            spacing: 'Plant spacing: 40-60 cm (3-5 plants / m2)'
+            temp: 'Germination temperature and time: 4-6 days; 20 to 30 °C'
+            time: 'Growth time: 60-65 days'
+            title: White Widow
+            variety: 'Indica: 60% Sativa: 40%'
+      plants:
+        all: tous
+        fruit: fruits
+        medicine: medicine
+        question_tag: '?'
+        title: What plant can you grow with
+        tomato: tomato
+        vegetable: vegetables
+      team:
+        title: meet team
+      video:
+        paragraph1: 'We are 3 entrepreneurs invested and passioned, we have designed this project by bringing together all our skills: software engineer, electro-technical and commercial. We have travelled, shared our ideas, sought after plants and made this a living project, today it''s up to you to play! Made live and vibrate!'
+        paragraph2: We come on Kickstarter today to develop our project and industrialize it. After more than a year of work we have designed plans, a big part of the program as well as the modular prototype. Our box is almost ready to serve you.
+        paragraph3: This is to provide you with the widest plant library possible and develop programs and performance of your PI BOX, we want the development of this project through Kickstarter. We can get out the first versions on the market end of 2017, with your help.
+        paragraph4: Our application is community based sharing of knowledge, we wish that our company Plant Indoor remains equal to this image. Modulate, plant and share... Your PI BOX will give your plant, the attention necessary to a successful plantation with quality.
+    navbar:
+      contact: contact
+      forum: forum
+      home: home
+      pibox: pi box
+      pigrow: pi grow
+      plants: plants
+      team: team
+      video: video

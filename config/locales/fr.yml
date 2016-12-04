@@ -1,0 +1,91 @@
+fr:
+  <%= I18n:
+    t("index:
+      content:
+        plant:
+          raspberry:
+            caption:
+              title")%>: Framboise
+  hello: Bonjour
+  index:
+    content:
+      contact:
+        loop: Rejoignez-nous et recevez votre réduction de 30%!
+        newsletter: Newsletter
+        thanks: Merci d'avoir rejoint PlantIndoor!
+        title: contactez
+        titlebis: nous
+      home:
+        presents: présente
+        thefirst: la première growbox automatique et modulable à souhait
+        thepibox: la pi box
+      pibox:
+        automatic:
+          mod:
+            title: Arrosage automatique
+          title: The key automatic is already defined with arrosage automatique
+        automatic_des1: aaa
+        carbon:
+          title: Filtre à carbon
+        learn: en savoir plus
+        temp:
+          mod:
+            title: Contrôle de la temp
+          title: contrôle de la temp
+        worry:
+          mod:
+            title: aucun soucis
+      pigrow:
+        about:
+          title3: Déjà expert ?
+      plant:
+        basilic:
+          caption:
+            title: basilic
+        coriander:
+          caption:
+            title: coriandre
+          mod:
+            title: Coriandre
+        cucumber:
+          caption:
+            title: Concombre
+          mod:
+            title: Concombre
+        filter:
+          fruit: Fruits
+          vegetable: Légumes
+        parsley:
+          caption:
+            title: persil
+          mod:
+            title: Persil
+        raspberry:
+          mod:
+            title: Framboise
+        strawberry:
+          caption:
+            title: Fraise
+          mod:
+            title: Fraise
+        tomato:
+          caption:
+            title: Tomate
+          mod:
+            title: Tomate
+      team:
+        title: Notre équipe
+      video:
+        paragraph1: sale pd
+        paragraph2: suce moi
+        paragraph3: encore
+        paragraph4: encule
+    navbar:
+      contact: contact
+      forum: forum
+      home: accueil
+      pibox: pi box
+      pigrow: pi grow
+      plants: plantes
+      team: equipe
+      video: video
